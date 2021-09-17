@@ -1,4 +1,5 @@
 <?php
+//Texto de inicio de la pagina
 echo "<h2>Gracias Frankin Guerrero por tu consulta</h2>";
 $Nombre = $_POST['Nombre'];
 $Apellido = $_POST['Apellido'];
@@ -31,6 +32,7 @@ echo "La fecha de la incidencica fue el : $Fecha_Incidencia <br> <br>";
 <strong>Punto de atencion disponible</strong>
 <br>
 <?php
+//Aqui hacemos el uso de los condicionales ,con los cuales depende de la respuesta del usuario,le arrojara un resultado
 if ($Ciudad == 'Bogota'){
 echo " cuenta con un punto fisco ,para atender sus peticiones ";
  } elseif ($Ciudad == 'Cali'){
@@ -101,8 +103,10 @@ echo "No cuenta con un punto de Atencion al cliente";
 ?>
 <br>
 <br>
-<strong>Eres apto para hacer la solisitud?</strong><br>
+<!--Texto en negrilla-->
+<strong>Eres apto para hacer la solicitud?</strong><br>
 <?php
+//Uso de condicionales para determinar si el usuario es apto o no para realizar una queja ,segun su tipo de documento
 if ($CC_TI == 'Cedula'){
     echo "Puedes continuar con el proceso";
 }elseif ($CC_TI == 'ti'){
@@ -113,11 +117,13 @@ if ($CC_TI == 'Cedula'){
 ?>
 <br>
 <br>
+<!--Texto en negrilla-->
 <strong>Tiendas disponibles</strong>
 <br>
 <?php
+//Uso de condicionales para determinar el numero de tiendas disponibles en el pais seleccionado
 if ($Pais == 'Colombia'){
-    echo "Colombia cuenta con 53 tiendas, donde puedes dirigirte para realizar cualquier compra o reclamo";
+    echo "Colombia cuenta con 52 tiendas, donde puedes dirigirte para realizar cualquier compra o reclamo";
 }elseif ($Pais == 'Argentina'){
     echo "Argentina cuenta con 78 tiendas, donde puedes dirigirte para realizar cualquier compra o reclamo";
 }elseif ($Pais == 'Chile'){
@@ -131,6 +137,7 @@ if ($Pais == 'Colombia'){
 
 <br>
 <br>
+<!--Texto en negrilla-->
 <strong>Tiempo de respuesta</strong>
 <br>
 <?php
