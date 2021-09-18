@@ -1,10 +1,10 @@
-
 <html>
 <head>
 <title>
     Falabella-Atencion al cliente 
 </title>
 </head>
+<!--La etiqueta background nos permite establecer un fondo en nuestra pagina-->
 <body background="2.jpg">
 
 <!--El type es el tipo de datos,name es el nombre de  la variable -->
@@ -24,6 +24,7 @@
 <center><p>Nombre:<input type="text" name="Nombre" /></p></center>
 <center><p>Apellido:<input type="text" name="Apellido" /></p></center>
 <center>
+<!--Se hace el uso de la etiqueta label para formar una lista ,para facilitar al usuario en diligenciar las opciones-->
 <label for"">CC_TI:</label>
 <select name="CC_TI">
 <option  value=""></option>
@@ -31,11 +32,11 @@
 <option  value="Cedula">Cedula</option>
 </select>
 </center>
-
 <center><p>N_Identificacion:<input type="text" name="N_Identificacion" /></p></center>
 <center><p>Correo:<input type="text" name="Correo" /></p></center>
 <center><p>Fecha de Contacto:<input type="date" name="Fecha_Contacto"/></p></center>
 <center>
+    <!--Se hace el uso de la etiqueta label para formar una lista ,para facilitar al usuario en diligenciar las opciones-->
 <label for"">Pais:</label>
 <select name="Pais">
 <option  value=""></option>
@@ -46,6 +47,8 @@
 </select>
 </center>
 <br>
+<!--Se hace el uso de la etiqueta label para formar una lista ,para facilitar al usuario en diligenciar las opciones-->
+<!--En las siguines lineas de codigo se presentan todas y cada una de las capitales del pais-->
 <center>
 <label for"">Ciudad:</label>
 <select name="Ciudad">
@@ -84,10 +87,6 @@
 <option  value="Puerto Carreño">Puerto Carreño</option>
 </select>
 </center>
-
-
-
-
 <center><p>Direccion:<input type="text" name="Direccion" /></p></center>
 <center><p>Motivo de contacto:<input type="text" name="Motivo_contacto" /></p></center>
 <center><p>Fecha de Incidencia:<input type="date" name="Fecha_Incidencia" /></p></center>
@@ -95,6 +94,7 @@
 <!--En las lineas anteriores se declararo ,la informacion que queremos que el cliente nos proporcione -->
 </form>
 <center>
+<!--Por medio de la etiqueta img src,se inserta una imagen que es representada mediante el logo de la empresa Falabella-->
 <img src="1.jpg">
 </center>
 </body>

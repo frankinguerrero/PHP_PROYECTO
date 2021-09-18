@@ -140,6 +140,7 @@ if ($Pais == 'Colombia'){
 <!--Texto en negrilla-->
 <strong>Tiempo de respuesta</strong>
 <br>
+<!--Tiempo de respuesta ,apartir de la fecha de contacto-->
 <?php
 $Fecha_contacto = date("n");
 $num1 =1; 
